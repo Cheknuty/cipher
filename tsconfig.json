@@ -24,7 +24,7 @@
     "src"
   ],
   "files": [
-    "src/assets/style/styled.d.ts"
+    "src/assets/style/styled.d.ts",
     "src.assets/img/image.d.ts"
   ]
 }
