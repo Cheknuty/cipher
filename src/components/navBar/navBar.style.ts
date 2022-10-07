@@ -6,6 +6,10 @@ export const NavBarWrapper = styled.nav`
     justify-content: space-between;
     max-width: 300px;
     width: 100%;
+
+    @media screen and (max-width: 1000px) {
+        display: none;
+    }
 `
 
 export const NavBarItem = styled.span`

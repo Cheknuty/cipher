@@ -1,7 +1,12 @@
+import { Container } from "../../common/container/container";
 import { AboutUsWrapper } from "./aboutUs.style";
 
 export function AboutUs() {
     return (
-        <AboutUsWrapper>About Us</AboutUsWrapper>
+        <AboutUsWrapper>
+            <Container>
+                Hello
+            </Container>
+        </AboutUsWrapper>
     )
 }

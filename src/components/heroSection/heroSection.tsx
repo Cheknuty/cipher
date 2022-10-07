@@ -10,7 +10,7 @@ export function HeroSection() {
         <HeroSectionWrapper>
             <Container>
                 <HeroSectionLogo>
-                    <HeroSectionLogoIcon width="150" src={Logo}  />
+                    <HeroSectionLogoIcon width={150} height={150} src={Logo}  />
                     <HeroSectionLogoTitle>CIPHER</HeroSectionLogoTitle>
                 </HeroSectionLogo>
                 <HeroSectionMessage>

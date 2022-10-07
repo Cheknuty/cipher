@@ -20,4 +20,21 @@ export const HeaderBox = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media screen and (max-width: 1000px) {
+        max-width: 150px;
+    }
+`
+
+export const HeaderMenu = styled.button`
+    padding: 0;
+    margin: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
+
+    @media screen and (max-width: 1000px) {
+        display: block;
+    }
 `
