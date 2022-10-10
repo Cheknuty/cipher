@@ -2,6 +2,27 @@ import styled from "styled-components";
 
 export const FeaturesSectionWrapper = styled.section`
     padding: 50px 0;
+
+    @media screen and (max-width: 1000px) {
+        & ul {
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 30px;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        & ul {
+            grid-template-columns: 1fr;
+        }
+
+        & li {
+            max-width: 80%;
+        }
+
+        & p {
+            font-size: 16px;
+        }
+    }
 `
 
 export const FeaturesSectionTitle = styled.h2`
@@ -23,11 +44,12 @@ export const FeaturesSectionList = styled.ul`
     margin: 0;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-column-gap: 25px;
+    grid-gap: 25px;
 `
 
 export const FeaturesSectionItem = styled.li`
     text-align: center;
+    margin: 0 auto;
 
 `
 

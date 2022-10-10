@@ -7,7 +7,7 @@ export function ThemeToggler() {
     const dispatch = useAppDispatch()
     const theme = useAppSelector(state => state.theme)
     return (
-        <ThemeTogglerWrapper onClick={() => dispatch(themeToggle("a"))}>
+        <ThemeTogglerWrapper onClick={() => dispatch(themeToggle(null))}>
             {
                 theme === "light" ?
                 <MdLightMode color="#000" fontSize={20} /> :

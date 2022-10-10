@@ -2,12 +2,15 @@ import { Link } from "react-router-dom"
 import { ButtonPrimaryWrapper } from "./buttonPrimary.style"
 
 interface IText {
-    text: string
+    text: string;
+    color?: string;
+    backgroundColor?: string;
+    link: string;
 }
-export function ButtonPrimary({text}: IText) {
+export function ButtonPrimary({text, color, backgroundColor, link}: IText) {
     return (
-        <ButtonPrimaryWrapper>
-            <Link to="/ciphers">{text}</Link>
+        <ButtonPrimaryWrapper style={{backgroundColor}}>
+            <Link to={link} style={{color}}>{text}</Link>
         </ButtonPrimaryWrapper>
     )
 }

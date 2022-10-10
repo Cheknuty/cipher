@@ -12,6 +12,10 @@ export const HeaderWrapper = styled.header`
 
 export const HeaderLogo = styled.img`
     width: 100px;
+
+    @media screen and (max-width: 600px) {
+        width: 80px;
+    }
 `
 
 export const HeaderBox = styled.div`
@@ -22,19 +26,6 @@ export const HeaderBox = styled.div`
     justify-content: space-between;
 
     @media screen and (max-width: 1000px) {
-        max-width: 150px;
-    }
-`
-
-export const HeaderMenu = styled.button`
-    padding: 0;
-    margin: 0;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-    display: none;
-
-    @media screen and (max-width: 1000px) {
-        display: block;
+        max-width: 120px;
     }
 `

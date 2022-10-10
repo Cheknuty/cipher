@@ -1,4 +1,5 @@
 import { configureStore } from "@reduxjs/toolkit";
+import drawerReducer from "./slice/drawerSlice";
 import langReducer from "./slice/langSlice";
 import themeReducer from "./slice/themeSlice";
 
@@ -6,7 +7,8 @@ import themeReducer from "./slice/themeSlice";
 export const store = configureStore({
     reducer: {
         theme: themeReducer,
-        lang: langReducer
+        lang: langReducer,
+        drawer: drawerReducer
     }
 })
 

@@ -4,6 +4,24 @@ export const HeroSectionWrapper = styled.section`
     background-color: ${p => p.theme.colors.accent};
     padding: 50px 0;
     text-align: center;
+
+    @media screen and (max-width: 1000px) {
+        & img {
+            width: 120px;
+            height: 120px;
+        }
+
+        & h1 {
+            font-size: 1.8em;
+        }
+
+        & p {
+            max-width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 18px;
+        }
+    }
 `
 
 export const HeroSectionLogoIcon = styled.img`
@@ -17,6 +35,10 @@ export const HeroSectionLogo = styled.div`
     max-width: 350px;
     width: 100%;
     margin: 0 auto 30px auto;
+
+    @media screen and (max-width: 1000px) {
+        max-width: 290px;
+    }
 `
 
 export const HeroSectionLogoTitle = styled.h1`

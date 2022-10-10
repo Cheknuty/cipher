@@ -8,7 +8,7 @@ export const ButtonPrimaryWrapper = styled.button`
     border-radius: 7px;
 
     &:hover a {
-        color: ${p => p.theme.colors.accent};
+        color: ${p => p.theme.colors.accent}!important;
     }
 
     & a {

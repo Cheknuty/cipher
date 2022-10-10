@@ -25,7 +25,7 @@ export function HeroSection() {
                         изучение и развитие криптографии в частности  шифров`
                     }
                 </HeroSectionMessage>
-                <ButtonPrimary text={
+                <ButtonPrimary link="/ciphers" text={
                     lang === "eng" ? "Get Started": 
                     lang === "uzb" ? "Boshlash" : "Начать"
                 }/>

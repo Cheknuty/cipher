@@ -1,7 +1,9 @@
 import styled from "styled-components";
 
 export const CiphersWrapper = styled.main`
-
+    #container {
+        height: 100%;
+    }
 `
 
 export const CiphersTitle = styled.h1`
@@ -24,6 +26,7 @@ export const CiphersList = styled.ul`
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 40px;
+    height: 100%;
 
     @media screen and (max-width: 1000px) {
         grid-template-columns: 1fr;
@@ -32,6 +35,14 @@ export const CiphersList = styled.ul`
 
 export const CiphersItem = styled.li`
     padding: 25px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+`
+
+export const CiphersItemBox = styled.div`
+    margin-bottom: 20px;
 `
 
 export const CiphersItemTitle = styled.h2`

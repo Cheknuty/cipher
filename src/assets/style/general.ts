@@ -23,13 +23,8 @@ export const GeneralStyle = createGlobalStyle`
         height: 100%;
 
         #root {
-            display: flex;
-            flex-direction: column;
+            position: relative;
             height: 100%;
-        }
-
-        & main {
-            flex-grow: 1;
         }
     }
 `

@@ -7,7 +7,9 @@ export const FooterWrapper = styled.footer`
 `
 
 export const FooterLogo = styled.img`
-
+    @media screen and (max-width: 600px){
+        width: 130px;
+    }
 `
 
 export const FooterLink = styled.a`
@@ -20,12 +22,36 @@ export const FooterSocial = styled.div`
     grid-template-columns: repeat(5, max-content);
     justify-content: center;
     align-items: center;
-    grid-column-gap: 25px;
+    grid-gap: 25px;
     margin-bottom: 50px;
+
+    @media screen and (max-width: 600px) {
+        grid-column-gap: 7px;
+        grid-row-gap: 10px;
+        grid-template-columns: none;
+        grid-template-areas: "a b b c" "d d e e";
+    }
 `
 
 export const FooterSocialItem = styled.a`
-    
+
+    @media screen and (max-width: 600px) {
+        &:nth-child(1) {
+            grid-area: a;
+        }
+        &:nth-child(2) {
+            grid-area: b;
+        }
+        &:nth-child(3) {
+            grid-area: c;
+        }
+        &:nth-child(4) {
+            grid-area: d;
+        }
+        &:nth-child(5) {
+            grid-area: e;
+        } 
+    }
 `
 
 export const FooterCopyright = styled.p`
