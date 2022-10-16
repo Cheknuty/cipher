@@ -1,25 +1,23 @@
 import { Container } from "../../common/container/container";
 import { useAppSelector } from "../../redux/hooks";
-import { CiphersItem, CiphersItemBox, CiphersItemDesc, CiphersItemLogo, CiphersItemLogoIcon, CiphersItemLogoList, CiphersItemLogoTitle, CiphersItemTitle, CiphersList, CiphersTitle, CiphersWrapper } from "./ciphers.style";
+import { CiphersItem, CiphersItemBox, CiphersItemDesc, CiphersItemLogo, CiphersItemLogoIcon, CiphersItemLogoList, CiphersItemLogoTitle, CiphersItemTitle, CiphersList, CiphersWrapper } from "./ciphers.style";
 import iMessage from "../../assets/img/IMessage.png"
 import Signal from "../../assets/img/signal.png"
 import WhatsApp from "../../assets/img/whatsApp.svg"
 import { Icon5 } from "../../common/icon5/icon5";
 import { Icon6 } from "../../common/icon6/icon6";
 import { ButtonPrimary } from "../../components/buttonPrimary/buttonPrimary";
+import { TopPrimary } from "../../common/topPrimary/topPrimary";
 
 export function Ciphers() {
     const lang = useAppSelector(state => state.lang)
     const theme = useAppSelector(state => state.theme)
     return (
         <CiphersWrapper>
-            <CiphersTitle>
-                {
-                    lang === "eng" ? "Ciphers" :
-                    lang === "uzb" ? "Shifrlar" : "Шифры"
-                }
-            </CiphersTitle>
             <Container>
+                <TopPrimary
+                text={lang === "eng" ? "Ciphers" : lang === "uzb" ? "Shifrlar" : "Шифры"}
+                />
                 <CiphersList>
                     <CiphersItem>
                         <CiphersItemBox>
@@ -72,7 +70,7 @@ export function Ciphers() {
                                 </CiphersItemLogo>
                             </CiphersItemLogoList>
                         </CiphersItemBox>
-                        <ButtonPrimary text="Symmetric ciphers" color={theme === "dark" ? "#2A2A2A" : "#D3D3D3"} backgroundColor={theme === "dark" ? "#D3D3D3" : "#2A2A2A"} link="/" />
+                        <ButtonPrimary text="Symmetric ciphers" color={theme === "dark" ? "#2A2A2A" : "#D3D3D3"} backgroundColor={theme === "dark" ? "#D3D3D3" : "#2A2A2A"} link="/sym-ciphers" />
                     </CiphersItem>
                     <CiphersItem>
                         <CiphersItemBox>
@@ -133,7 +131,7 @@ export function Ciphers() {
                                 </CiphersItemLogo>
                             </CiphersItemLogoList>
                         </CiphersItemBox>
-                        <ButtonPrimary text="Asymmetric ciphers" color={theme === "dark" ? "#2A2A2A" : "#D3D3D3"} backgroundColor={theme === "dark" ? "#D3D3D3" : "#2A2A2A"} link="/" />
+                        <ButtonPrimary text="Asymmetric ciphers" color={theme === "dark" ? "#2A2A2A" : "#D3D3D3"} backgroundColor={theme === "dark" ? "#D3D3D3" : "#2A2A2A"} link="/asym-ciphers" />
                     </CiphersItem>
                 </CiphersList>
             </Container>

@@ -6,23 +6,11 @@ export const CiphersWrapper = styled.main`
     }
 `
 
-export const CiphersTitle = styled.h1`
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
-`
-
 export const CiphersList = styled.ul`
     list-style: none;
     margin: 0;
     padding: 0;
+    padding-top: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 40px;
