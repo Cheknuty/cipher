@@ -9,7 +9,7 @@ export const AboutUsDesc = styled.p`
     max-width: 70%;
     margin: 0 auto;
     text-align: center;
-    padding-top: 20px;
+    padding: 20px 0;
     @media screen and (max-width: 1000px) {
         font-size: 15px;
     }
