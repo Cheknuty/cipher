@@ -131,7 +131,7 @@ export function Ciphers() {
                                 </CiphersItemLogo>
                             </CiphersItemLogoList>
                         </CiphersItemBox>
-                        <ButtonPrimary text="Asymmetric ciphers" color={theme === "dark" ? "#2A2A2A" : "#D3D3D3"} backgroundColor={theme === "dark" ? "#D3D3D3" : "#2A2A2A"} link="/asym-ciphers" />
+                        <ButtonPrimary text="Asymmetric ciphers" color={theme === "dark" ? "#2A2A2A" : "#D3D3D3"} backgroundColor={theme === "dark" ? "#D3D3D3" : "#2A2A2A"} link="/ciphers" />
                     </CiphersItem>
                 </CiphersList>
             </Container>
