@@ -17,7 +17,7 @@ export function Default() {
                 <Route path="/about-us" element={<AboutUs />} />
                 <Route path="/ciphers" element={<Ciphers />} />
                 <Route path="/asym-ciphers" element={<AsymCiphers />} />
-                <Route path="/sym-ciphers" element={<SymCiphers />} />
+                <Route path="/ciphers/sym-ciphers" element={<SymCiphers />} />
             </Routes>
         </DefaultWrapper>
     )

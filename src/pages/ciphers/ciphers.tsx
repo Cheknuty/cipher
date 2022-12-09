@@ -70,7 +70,7 @@ export function Ciphers() {
                                 </CiphersItemLogo>
                             </CiphersItemLogoList>
                         </CiphersItemBox>
-                        <ButtonPrimary text="Symmetric ciphers" color={theme === "dark" ? "#2A2A2A" : "#D3D3D3"} backgroundColor={theme === "dark" ? "#D3D3D3" : "#2A2A2A"} link="/sym-ciphers" />
+                        <ButtonPrimary text="Symmetric ciphers" color={theme === "dark" ? "#2A2A2A" : "#D3D3D3"} backgroundColor={theme === "dark" ? "#D3D3D3" : "#2A2A2A"} link="/ciphers/sym-ciphers" />
                     </CiphersItem>
                     <CiphersItem>
                         <CiphersItemBox>
